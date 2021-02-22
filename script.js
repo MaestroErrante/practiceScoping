@@ -11,6 +11,8 @@ function calcAge(birthYear) {
     //Create Block Scope
     if (birthYear >= 1981 && birthYear <= 1996) {
       var millenial = true;
+      const firstName = 'Steven';
+      //The name is changed because the variable of firstName is in the same block, in the same scope
       const str = `Oh, and you're a millenial, ${firstName}`;
       console.log(str);
 
