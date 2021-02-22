@@ -5,7 +5,7 @@ function calcAge(birthYear) {
 
   // Create a second scope
   function printAge() {
-    const output = `You are ${age}, born in ${birthYear}`;
+    const output = `${firstName}, you are ${age}, born in ${birthYear}`;
     console.log(output);
   }
 
