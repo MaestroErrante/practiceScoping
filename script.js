@@ -7,6 +7,14 @@ function calcAge(birthYear) {
   function printAge() {
     const output = `${firstName}, you are ${age}, born in ${birthYear}`;
     console.log(output);
+
+    //Create Block Scope
+    if (birthYear >= 1981 && birthYear <= 1996) {
+      const str = `Oh, and you're a millenial, ${firstName}`;
+      console.log(str);
+    }
+    //Not able to access, only inside the block that it was created
+    console.log(str);
   }
 
   printAge();
