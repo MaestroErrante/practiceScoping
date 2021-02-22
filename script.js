@@ -10,11 +10,16 @@ function calcAge(birthYear) {
 
     //Create Block Scope
     if (birthYear >= 1981 && birthYear <= 1996) {
+      var millenial = true;
       const str = `Oh, and you're a millenial, ${firstName}`;
       console.log(str);
     }
     //Not able to access, only inside the block that it was created
-    console.log(str);
+
+    //console.log(str);
+
+    //Can be accessed, variable declared with var are funcion scopes, and they ignore the block scope
+    console.log(millenial);
   }
 
   printAge();
@@ -28,8 +33,8 @@ calcAge(1990);
 
 //Not able to access the age variable cause the scope chain
 
-console.log(age);
+//console.log(age);
 
 //Same goes for functions
 
-printAge();
+//printAge();
