@@ -18,7 +18,7 @@ function calcAge(birthYear) {
 
     //console.log(str);
 
-    //Can be accessed, variable declared with var are funcion scopes, and they ignore the block scope
+    //Can be accessed, variable declared with var are function scopes, and they ignore the block scope
     console.log(millenial);
   }
 
