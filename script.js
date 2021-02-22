@@ -5,7 +5,7 @@ function calcAge(birthYear) {
 
   // Create a second scope
   function printAge() {
-    const output = `${firstName}, you are ${age}, born in ${birthYear}`;
+    let output = `${firstName}, you are ${age}, born in ${birthYear}`;
     console.log(output);
 
     //Create Block Scope
@@ -20,6 +20,8 @@ function calcAge(birthYear) {
       function add(a, b) {
         return a + b;
       }
+
+      output = 'NEW OUTPUT';
     }
     //Not able to access, only inside the block that it was created
 
@@ -29,7 +31,11 @@ function calcAge(birthYear) {
     console.log(millenial);
 
     //Call it outside of the block, returns add is not defined
-    console.log(add(2, 3));
+
+    //console.log(add(2, 3));
+
+    //We get new output because we manipulated and existing variable inside a child scope.
+    console.log(output);
   }
 
   printAge();
